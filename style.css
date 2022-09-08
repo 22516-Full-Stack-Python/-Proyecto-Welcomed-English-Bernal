@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+.main ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    width: 25%;
+    border-right: 0.1rem solid black;
+    text-align: center;
+}
+
+ul li:last-child {
+    border-right: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    padding: 5%;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.courses div {
+    width: 100%;
+    text-align: center;
+}
+
+.courses p {
+    font-size: 1.5rem;
+}
+
+.paragraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images div {
+    display: flex;
+    width: 33%;
+}
+
+.images img {
+    width: 100%;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 1rem;
+}
