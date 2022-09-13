@@ -13,9 +13,14 @@ body {
     box-sizing: inherit;
 }
 
-header h1 {
-    text-align: center;
-    padding: 5%;
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 50%;
+    padding: 4%;
 }
 
 nav {
@@ -23,7 +28,7 @@ nav {
     transition: all 1s;
     position: relative;
     z-index: 1;
-    padding: 16px;
+    padding: 1%;
     background-color: whitesmoke;
 }
 

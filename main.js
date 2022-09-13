@@ -1,6 +1,13 @@
 const $nav = document.querySelector(".main")
-const topOfNav = $nav.offsetTop
+let topOfNav
+setTimeout(() => {
+    topOfNav = $nav.offsetTop
+}, 150)
 
+function recalculateOffsetTop() {
+    topOfNav = $nav.offsetTop
+    return topOfNav
+}
 
 function fixNav () {
     if(this.scrollY >= topOfNav) {
@@ -14,3 +21,6 @@ function fixNav () {
 }   
 
 window.addEventListener("scroll", fixNav)
+window.addEventListener("resize", recalculateOffsetTop)
+
+
