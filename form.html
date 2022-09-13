@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Formulario</title>
+</head>
+
+  <body>
+    <h1>Formulario de registro</h1>
+    <p>Por favor, rellena este formulario con la información requerida.</p>
+    <form action="">
+      <fieldset>
+        <label for="nombre">Nombre: <input id="first-name" name="nombre" type="text" required /></label>
+        <label for="apellido">Apellido: <input id="last-name" name="apellido" type="text" required /></label>
+        <label for="email">Correo electrónico: <input id="email" name="email" type="email" required /></label>
+        <label for="telefono">Teléfono: <input id="telefono" name="telefono" type="tel" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+        </label>
+      </fieldset>
+      <fieldset>
+        
+        <label for="referido">Cómo te enteraste de nosotros?
+          <select id="referido" name="referido">
+            <option value="">(seleccione una)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </label>
+        <label for="bio">Cuadro de texto:
+          <textarea id="bio" name="texto" rows="3" cols="30" placeholder="...."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
