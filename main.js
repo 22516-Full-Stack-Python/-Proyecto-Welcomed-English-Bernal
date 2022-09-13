@@ -4,7 +4,7 @@ setTimeout(() => {
     topOfNav = $nav.offsetTop
 }, 150)
 
-function calculateOffsetTop() {
+function recalculateOffsetTop() {
     topOfNav = $nav.offsetTop
     return topOfNav
 }
@@ -21,6 +21,6 @@ function fixNav () {
 }   
 
 window.addEventListener("scroll", fixNav)
-window.addEventListener("resize", calculateOffsetTop)
+window.addEventListener("resize", recalculateOffsetTop)
 
 
