@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    background-color: rgba(245, 245, 245, 1);
 }
 
 body {
@@ -28,8 +29,8 @@ nav {
     transition: all 1s;
     position: relative;
     z-index: 1;
-    padding: 1%;
-    background-color: whitesmoke;
+    padding: 0.1%;
+    background-color: rgba(30, 27, 73, 0.555);
 }
 
 .main ul {
@@ -40,7 +41,7 @@ nav {
 
 ul a {
     text-decoration: none;
-    color: black;
+    color: rgb(214, 212, 212);
 }
 
 ul li {
@@ -50,10 +51,18 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 ul li:last-child {
     border-right: 0;
+}
+
+.nav-logo {
+    max-width: 0;
+    max-height: 2vh;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .content {
@@ -62,14 +71,15 @@ ul li:last-child {
     transition: transform 0.5s;
 }
 
-.content img {
-    padding: 5%;
-}
+/* .content img {
+    /* padding: 5%; 
+} */
 
 .courses {
     display: flex;
     flex-direction: column;
-    padding: 0 5%;
+    padding: 5%;
+    background-color:  rgba(36, 36, 36, 0.555);
 }
 
 .courses div {
@@ -78,7 +88,8 @@ ul li:last-child {
 }
 
 .courses p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: rgb(214, 212, 212);
 }
 
 .images {
@@ -110,6 +121,12 @@ footer p {
 .fixed-nav{
     top: 0;
     position: fixed;
+}
+
+.fixed-nav .nav-logo{
+    max-width: 10%;
+    background-image: url("imagenes/logoSVG.svg");
+    background-size: cover;
 }
 
 @media screen and (max-width:820px) {
