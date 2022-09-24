@@ -7,37 +7,58 @@
     <link rel="stylesheet" href="formstyle.css">
     <title>Formulario</title>
 </head>
+<body>
+    
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <p>Por favor, rellena este formulario con la información requerida.</p>
 
-  <body>
-    <h1>Formulario de registro</h1>
-    <p>Por favor, rellena este formulario con la información requerida.</p>
-    <form action="">
-      <fieldset>
-        <label for="nombre">Nombre: <input id="first-name" name="nombre" type="text" required /></label>
-        <label for="apellido">Apellido: <input id="last-name" name="apellido" type="text" required /></label>
-        <label for="email">Correo electrónico: <input id="email" name="email" type="email" required /></label>
-        <label for="telefono">Teléfono: <input id="telefono" name="telefono" type="tel" required /></label>
-      </fieldset>
-      <fieldset>
-        <label for="terms-and-conditions" name="terms-and-conditions">
-        </label>
-      </fieldset>
-      <fieldset>
-        
-        <label for="referido">Cómo te enteraste de nosotros?
-          <select id="referido" name="referido">
-            <option value="">(seleccione una)</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </label>
-        <label for="bio">Cuadro de texto:
-          <textarea id="bio" name="texto" rows="3" cols="30" placeholder="...."></textarea>
-        </label>
-      </fieldset>
-      <input type="submit" value="Enviar" />
-    </form>
-  </body>
+        <form action="http://httpbin.org/post" method="post">
+            <ul class="outer">
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                </li>
+                <li>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ingresa tu correo electronico">
+                </li>
+                <li>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="ingresa tu numero de teléfono">
+                </li>
+                <li>
+                    <label for="referido">Cómo te enteraste de nosotros?</label>
+                    <select name="referido" id="referido">
+                        <option value="">(seleccione una opción)</option>
+                        <option value="1">Facebook</option>
+                        <option value="2">Instagram</option>
+                        <option value="3">A través de un conocido</option>
+                        <option value="4">Otro</option>
+
+                    </select>
+                </li>
+                <li>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="6" placeholder="ingresa tu mensaje"></textarea>
+                </li>
+            <div class="mapa">
+            <iframe name="mapa"width="325" height="280" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=-34.60375768378664~-58.38161587715149&lvl=18&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+            </iframe>
+            <div style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
+                <a id="mapalargo" target="_blank" href="https://www.bing.com/maps?cp=-34.60375768378664~-58.38161587715149&amp;sty=r&amp;lvl=18&amp;FORM=MBEDLD">Ver mapa grande</a> &nbsp; | &nbsp;
+                <a id="direccion" target="_blank" href="https://www.bing.com/maps/directions?cp=-34.60375768378664~-58.38161587715149&amp;sty=r&amp;lvl=18&amp;rtp=~pos.-34.60375768378664_-58.38161587715149____&amp;FORM=MBEDLD">Obtener indicaciones</a>
+            </div>
+               </div>
+                <li>
+                    <button type="submit">Enviar</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
 </html>
