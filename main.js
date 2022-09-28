@@ -1,12 +1,9 @@
 const $nav = document.querySelector(".main")
-let topOfNav
 const $dropdown = document.querySelector(".dropdown")
 const $courses = document.querySelector("#courses")
+let topOfNav = $nav.offsetTop
 
-
-topOfNav = $nav.offsetTop
 function recalculateOffsetTop() {
-    window.scrollTo(0, 0)
     topOfNav = $nav.offsetTop
     return topOfNav
 }
@@ -21,8 +18,7 @@ function fixNav() {
 }
 
 function showDropdownMenu(e) {
-        $dropdown.classList.add("hovered")
-    
+    $dropdown.classList.add("hovered")
 }
 
 function hideDropdownMenu() {
