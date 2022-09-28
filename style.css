@@ -89,15 +89,12 @@ img {
     text-align: center;
 }
 
-.courses p {
-    font-size: 1.2rem;
-    color: rgb(70, 69, 69);
-}
 
 .images {
     display: flex;
     justify-content: space-between;
     gap: 2vw;
+    font-size: 2vw;
 }
 
 .images div {
@@ -119,14 +116,14 @@ footer {
     display: flex;
     background-color: rgba(201, 200, 200, 0.555);
     padding-bottom: 1rem;
-    padding: 0.5vw;
+    padding: 0.5vw 2vw;
     border-radius: 6px;
+    font-size: 1vw;
 }
 
 footer p {
     margin: 0;
     color: rgb(169, 170, 170);
-    font-size: 1vw;
 }
 
 .fixed-nav {
@@ -143,6 +140,7 @@ footer p {
 #courses {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -176,13 +174,13 @@ footer p {
     gap: 5vw;
     justify-content: center;
     margin-left: auto;
-    font-size: 1vw;
 }
 
 @media screen and (max-width:820px) {
     .images {
         flex-wrap: wrap;
         justify-content: center;
+        font-size: 3vw;
     }
 
     .images div {
@@ -195,6 +193,10 @@ footer p {
 
     .dropdown {
         margin-top: 1.5vh;
+    }
+
+    footer {
+        font-size: 2vw;
     }
 }
 
