@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -24,9 +24,17 @@
     <nav class="main">
         <ul>
             <li class="nav-logo"></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li id="courses">Cursos
+                <div class="dropdown">
+                    <a href="cursos.html">Adultos</a>
+                    <a href="cursos.html">Adolescentes</a>
+                    <a href="cursos.html">Niños</a>
+                    <a href="cursos.html">Examenes</a>
+                </div>
+            </li>
+            <li><a href="form.html">Contacto</a></li>
         </ul>
     </nav>
     <section class="content">
@@ -35,23 +43,29 @@
             <div class="images">
                 <div class="kids">
                     <p>Cursos para niños</p>
-                    <img src="imagenes/kid-studying.png" alt="">
+                    <a href="cursos.html"><img src="imagenes/kid-studying.png" alt=""></a>
                 </div>
                 <div class="teenagers">
                     <p>Cursos para adolescentes</p>
-                    <img src="imagenes/adolescents-studying.png" alt="">
+                    <a href="cursos.html"><img src="imagenes/adolescents-studying.png" alt=""></a>
                 </div>
                 <div class="adults">
                     <p>Cursos para adultos</p>
-                    <img src="imagenes/adult-studying.png" alt="">
+                    <a href="cursos.html"><img src="imagenes/adult-studying.png" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <p>Copyright 2022 by. All rights reserved</p>
+        <div class="site-map">
+            <a href="index.html">Inicio</a>
+            <a href="">Nosotros</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="form.html">Contacto</a>
+        </div>
     </footer>
 </body>
-<script src="main.js" defer></script>
+
 
 </html>
