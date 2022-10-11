@@ -32,9 +32,13 @@ nav {
     z-index: 1;
     padding: 0.1%;
     background-color: rgba(201, 200, 200, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main ul {
+    flex: 1;
     display: flex;
     list-style: none;
     padding: 0;
@@ -45,6 +49,7 @@ a {
     color: rgb(71, 70, 70);
 }
 
+
 ul li {
     flex: 1;
     border-right: 0.1rem solid black;
@@ -52,7 +57,6 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 ul li:last-child {
@@ -64,6 +68,7 @@ ul li:last-child {
     max-height: 2vh;
     overflow: hidden;
     transition: all 0.5s;
+    border: none;
 }
 
 .content {
@@ -117,7 +122,6 @@ footer {
     background-color: rgba(201, 200, 200, 0.555);
     padding-bottom: 1rem;
     padding: 0.5vw 2vw;
-    border-radius: 6px;
     font-size: 1vw;
 }
 
@@ -131,9 +135,12 @@ footer p {
 }
 
 .fixed-nav .nav-logo {
-    max-width: 10%;
+    flex: 1;
+    padding: 1%;
+    max-width: 5%;
     background-image: url("imagenes/logoSVG.svg");
     background-size: cover;
+    border-right: 0.1rem solid black;
 }
 
 
@@ -152,7 +159,7 @@ footer p {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: all 1s;
+    transition: all 0.5s;
     margin-top: 2vh;
     visibility: hidden;
 }
@@ -191,6 +198,12 @@ footer p {
         font-size: 0.7rem;
     }
 
+    .fixed-nav .nav-logo {
+        background-image: url("imagenes/lechuzaSVG.svg");
+        padding: 3%;
+        max-width:5%;
+    }
+
     .dropdown {
         margin-top: 1.5vh;
     }
@@ -199,4 +212,3 @@ footer p {
         font-size: 2vw;
     }
 }
-
