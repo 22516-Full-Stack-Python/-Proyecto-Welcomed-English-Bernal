@@ -21,7 +21,7 @@ body {
 }
 
 .logo img {
-    max-width: 50%;
+    max-width: 40%;
     padding: 4%;
 }
 
@@ -37,30 +37,42 @@ nav {
     justify-content: center;
 }
 
-.main ul {
+.main .bar-container {
     flex: 1;
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-a {
+.bar-container a {
     text-decoration: none;
-    color: rgb(71, 70, 70);
+    color: rgb(70, 70, 71);
+    transition: all 0.5s;
 }
 
 
-ul li {
+.bar-item {
     flex: 1;
-    border-right: 0.1rem solid black;
+    border-right: 0.1rem solid rgb(255, 255, 255);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1%;
+    border-radius: 2px;
+    transition: all 0.5s;
+} 
+
+.bar-item:last-child {
+    border-right: 0;
 }
 
-ul li:last-child {
-    border-right: 0;
+.bar-item:hover {
+    background-color: rgba(175, 175, 175, 0.8);
+}
+
+.dropdown a:hover {
+    background-color: rgba(175, 175, 175, 0.8);
 }
 
 .nav-logo {
@@ -109,6 +121,11 @@ img {
     border-radius: 14px;
     box-shadow: 0 3px 10px rgb(201, 200, 200);
     padding: 2%;
+    transition: all 0.5s;
+}
+
+.images div:hover {
+    transform: scale(1.02);
 }
 
 .images img {
@@ -129,6 +146,7 @@ footer p {
     margin: 0;
     color: rgb(169, 170, 170);
 }
+
 
 .fixed-nav {
     top: 0;
@@ -181,6 +199,15 @@ footer p {
     gap: 5vw;
     justify-content: center;
     margin-left: auto;
+}
+
+.site-map a {
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+}
+
+.site-map a:hover {
+    color: rgb(158, 158, 158);
 }
 
 @media screen and (max-width:820px) {
