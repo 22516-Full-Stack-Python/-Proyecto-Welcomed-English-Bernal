@@ -90,6 +90,23 @@ nav {
     padding: 4vw;
 }
 
+.home-image {
+    background-image: url("imagenes/Students.jpg");
+    background-size: cover;
+    
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+}
+
+.home-image p {
+    padding: 25% 40% 25% 0%;
+    color: white;
+    /* opacity: 0; */
+}
+
 img {
     border-radius: 8px;
 }
