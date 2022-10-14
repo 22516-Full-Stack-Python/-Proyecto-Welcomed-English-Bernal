@@ -52,6 +52,8 @@ nav {
     text-decoration: none;
     color: rgb(70, 70, 71);
     transition: all 0.5s;
+    padding: 1rem 3rem;
+
 }
 
 
@@ -62,7 +64,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1%;
     border-radius: 2px;
     transition: all 0.5s;
 } 
@@ -107,6 +108,7 @@ nav {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    padding: 1rem;
 }
 
 .dropdown {
