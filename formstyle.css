@@ -13,6 +13,9 @@ h1,p{
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template: 1fr / 3fr 1fr ;
+  gap: 2rem;
 }
  
 .container * {
@@ -77,6 +80,7 @@ h1,p{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    align-self: center;
 }
  
 .outer li button {
