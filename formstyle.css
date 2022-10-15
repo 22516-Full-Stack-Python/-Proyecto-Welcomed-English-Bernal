@@ -110,11 +110,15 @@ h1,p{
   .outer{
     width: 70vw;
   }
+ 
 }
 @media screen and (max-width:1200px){
     .outer{
       width: 60vw;
   }
+  .container{
+    grid-template: 3fr 1fr /1fr
+  }
 }
-  
+
   
