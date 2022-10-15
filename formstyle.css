@@ -89,6 +89,11 @@ h1,p{
     width: 100%;
     align-items: center;
 }
+.botones{
+  text-align: center;
+  width: 325px;
+  padding: 6px 0;
+}
  
 .outer li button {
   margin-left: auto;
