@@ -52,7 +52,7 @@ nav {
     text-decoration: none;
     color: rgb(70, 70, 71);
     transition: all 0.5s;
-    padding: 1rem 3rem;
+    padding: 1vw 3vw;
 
 }
 
@@ -158,7 +158,7 @@ nav {
 
 .message {
     padding: 4%;
-    margin: 5% 40% 30% 5%;
+    margin: 5% 0 20% 5%;
     color: white;
     background-color: rgba(232, 232, 233, 0.233);
     border: 1px solid rgb(204, 204, 204);
@@ -169,7 +169,8 @@ nav {
     align-items:center;
     max-width: 25rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
+    max-width: 30vw;
 }
 
 .start-now_button {
@@ -178,7 +179,7 @@ nav {
     color: white;
     border: 1px solid rgb(185, 163, 163);
     border-radius: 6px;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     cursor: pointer;
 }
 
@@ -289,6 +290,14 @@ footer p {
 
     .dropdown {
         margin-top: 1.5vh;
+    }
+
+    .message {
+        font-size: 2.5vw;
+    }
+
+    .start-now_button {
+        font-size: 2.5vw;
     }
 
     footer {
