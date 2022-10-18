@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="formstyle.css">
     <title>Formulario</title>
     <link rel="stylesheet" href="navbarStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,25 +26,33 @@
             <h1>Formulario de Registro</h1>
             <p>Por favor, rellena este formulario con la información requerida.</p>
 
-            <form action="http://httpbin.org/post" method="post">
+            <form action="http://httpbin.org/post" method="post" id="formulario">
                 <ul class="outer">
-                    <li>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                    <li class="form__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">El nombre debe contener entre 3 a 16 letras.</p>
                     </li>
-                    <li>
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <li class="form__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">El apellido debe contener entre 4 y 25 letras.</p>
                     </li>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Ingresa tu correo electrónico">
+                    <li class="form__grupo" id="grupo__email">
+                        <label for="email" class="formulario__label">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">Correo inválido.</p>
                     </li>
-                    <li>
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" placeholder="Ingresa tu número de teléfono">
+                    <li class="form__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono"placeholder="Ingresa tu número de teléfono">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        <p class="formulario__input-error">El teléfono debe contener entre 7 y 14 números.</p>
                     </li>
-                    <li>
+                    <li class="form__grupo" id="grupo__refer">
                         <label for="referido">Cómo te enteraste de nosotros?</label>
                         <select name="referido" id="referido">
                             <option value="">(seleccione una opción)</option>
@@ -53,12 +63,22 @@
 
                         </select>
                     </li>
-                    <li>
+                    <li class="form__grupo" id="grupo__mensaje">
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" rows="6" placeholder="ingresa tu mensaje"></textarea>
                     </li>
                     <li>
-                        <button type="submit">Enviar</button>
+                        <label class="terminos" for="terminos">Acepto los términos y condiciones.</label>
+                        <input class="terminoscb" type="checkbox" name="terminos"id="terminos">
+                    </li>
+                    <div class="formulario__mensaje"id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario de forma correcta.</p>
+
+                    </div>
+                    
+                    <li>
+                        <button name="submit" type="submit">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado con éxito!</p>
                     </li>
                 </ul>
             </form>
@@ -77,8 +97,10 @@
         </div>
     </div>
     <footer></footer>
+    <script src="formValidation.js"></script>
     <script src="navbar.js"></script>
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

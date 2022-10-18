@@ -78,6 +78,16 @@ h1,p{
   padding: 15px;
   border: none;
 }
+.terminos{
+  position: relative;
+  margin-left: 10px;
+  font-size: 12px;
+  
+}
+.terminoscb{
+  display: flex;
+  position: absolute
+}
 #mapalargo,#direccion{
   background: rgba(154, 182, 241, 0.555);
   color: rgb(27, 27, 50);
@@ -106,6 +116,58 @@ h1,p{
   letter-spacing: .09em;
   border-radius: 2px;
 }
+
+/* ----Estilos para validacion---- */
+.formulario__validacion-estado{
+  position: relative;
+  right: 20px;
+  opacity: 0;
+}
+.form__grupo-correcto .formulario__validacion-estado{
+  color: #1ed12d;
+  opacity: 1;
+}
+.form__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+.form__grupo-incorrecto .formulario__validacion-estado{
+  color: #bb2929;
+}
+.form__grupo-incorrecto .formulario__input{
+  border: 3px solid #bb2929
+}
+.formulario__input-error {
+  font-size: 10px;
+
+  margin-bottom: 0;
+  display: none;
+}
+.formulario__input-error-activo{
+  display: block;
+}
+.formulario__mensaje {
+  font-family: 'Roboto', sans-serif;
+	
+  line-height: 20px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje-exito {
+  font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
 @media screen and (max-width:576px){
   .outer{
     width: 90vw;
