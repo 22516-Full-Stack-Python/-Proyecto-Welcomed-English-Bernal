@@ -1,4 +1,100 @@
-* {
+/*Contenido central*/
+ .container {
+    width: 80%;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 3rem;
+    height: 100vh;
+    /* align-items: center; */
+    margin: 0 auto;
+
+} 
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article img {
+    width: 100%;
+    padding: 3vh;
+    border-radius: 2rem;
+    
+
+}
+
+aside {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+aside img{
+    width: 20vh;
+    border-radius: 1rem;
+    border: 1px solid lightgray;
+}
+
+/* Tarjetas cursos */
+.courses {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: rgba(245, 245, 245, 0.555);
+    justify-content: center;
+}
+
+.courses div {
+    width: 100%;
+    text-align: center;    
+}
+
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    font-size: 2vw;
+}
+
+.images div {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgb(201, 200, 200);
+    padding: 2%;
+    transition: all 0.5s;
+}
+
+.images div:hover {
+    transform: scale(1.02);
+}
+
+.images img {
+    width: 100%;
+    padding: 0;
+    flex: 1 0 auto;
+}
+/*
+.images div:hover {
+    transform: scale(1.02);
+}
+
+.images img {
+    width: 100%;
+    padding: 0;
+    flex: 1 0 auto;
+} */
+
+
+/* .article { */
+/* display: grid;
+    grid-template: 2fr / 2fr 1fr ; */
+/* } */
+
+
+
+/* * {
    margin: 0 auto;
    padding: 5px;
    box-sizing: border-box; 
@@ -155,4 +251,4 @@ main {
         }
 
 
-}}
+}} */

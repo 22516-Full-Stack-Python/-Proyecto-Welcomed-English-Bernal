@@ -8,10 +8,10 @@ $navbar.innerHTML = `
         <div class="bar-item"><a href="#">Nosotros</a></div>
         <div class="bar-item" id="courses">Cursos
             <div class="dropdown">
-                <a href="cursos.html">Adultos</a>
-                <a href="cursos.html">Adolescentes</a>
                 <a href="cursos.html">Niños</a>
-                <a href="cursos.html">Examenes</a>
+                <a href="cursos_adol.html">Adolescentes</a>
+                <a href="cursos_adult.html">Adultos</a>
+                <a href="cursos_cam.html">Examenes</a>
             </div>
         </div>
     <div class="bar-item"><a href="form.html">Contacto</a></div>
