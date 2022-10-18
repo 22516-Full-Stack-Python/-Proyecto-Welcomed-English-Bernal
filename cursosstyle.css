@@ -75,6 +75,17 @@ aside img{
     padding: 0;
     flex: 1 0 auto;
 }
+
+/*Boton de acción*/
+.start-now_button {
+    padding: 1%;
+    background-color: rgba(189, 35, 35, 0.534);
+    color: white;
+    border: 1px solid rgb(185, 163, 163);
+    border-radius: 6px;
+    font-size: 1vw;
+    cursor: pointer;
+}
 /*
 .images div:hover {
     transform: scale(1.02);
