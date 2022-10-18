@@ -72,7 +72,8 @@ h1,p{
   margin: 0;
 }
  
-.outer li input:not([type='checkbox']),
+.outer li input,
+.outer li select,
 .outer li textarea {
   padding: 15px;
   border: none;
