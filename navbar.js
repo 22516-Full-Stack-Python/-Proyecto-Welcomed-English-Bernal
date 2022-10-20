@@ -17,6 +17,8 @@ $navbar.innerHTML = `
     <div class="bar-item"><a href="form.html">Contacto</a></div>
 </div>`
 
+
+
 $footer.innerHTML = ` 
 <p>Copyright 2022 by. All rights reserved</p>
 <div class="site-map">
@@ -26,14 +28,13 @@ $footer.innerHTML = `
     <a href="form.html">Contacto</a>
 </div>`
 
-
 const $nav = document.querySelector(".main")
 const $dropdown = document.querySelector(".dropdown")
 const $courses = document.querySelector("#courses")
 let topOfNav = $nav.offsetTop
 
 function recalculateOffsetTop() {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
     topOfNav = $nav.offsetTop
     return topOfNav
 }
