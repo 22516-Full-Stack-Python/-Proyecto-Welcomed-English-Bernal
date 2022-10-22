@@ -188,6 +188,18 @@ nav {
     background-color: rgba(116, 30, 30, 0.534);
 }
 
+/*Boton de frase (quote)*/
+#btn {
+    align-self: center;
+    /* border: 2px solid #666; */
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+
 img {
     border-radius: 8px;
 }
