@@ -5,7 +5,7 @@ $startNow_Button.onclick = function () {
 }
 
 
-const api = "https://api.quotable.io/random";
+const api = "https://api.quotable.io/random?maxLength=50";
 
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
@@ -23,7 +23,7 @@ changeFrase()
 
 setInterval (function () {
     changeFrase()
-}, 60000)
+}, 30000)
 
 
 
