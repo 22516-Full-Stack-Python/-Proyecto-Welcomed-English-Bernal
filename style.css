@@ -171,7 +171,14 @@ nav {
     max-width: 25rem;
     text-align: center;
     font-size: 1.5vw;
-    max-width: 30vw;
+    width: 30vw;
+    height: 22vw;
+    transition: all 1s;
+}
+
+.quote-box {
+    margin-bottom: 5%;
+    flex: 1;
 }
 
 .start-now_button {
