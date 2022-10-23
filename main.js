@@ -23,7 +23,7 @@ changeFrase()
 
 setInterval (function () {
     changeFrase()
-}, 5000)
+}, 60000)
 
 
 
