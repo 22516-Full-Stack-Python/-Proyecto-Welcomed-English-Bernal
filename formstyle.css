@@ -6,9 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background: rgb(245, 245, 245);
-  color: rgb(27, 27, 50);
-  padding: 25px 0;
- 
+  color: rgb(27, 27, 50); 
 }
 h1,p{
   display: flex;
