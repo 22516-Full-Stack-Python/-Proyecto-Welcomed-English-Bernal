@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     color: #595959;
-    line-height: 1.5;
 }
 
 *,
@@ -49,10 +48,7 @@ nav {
     text-decoration: none;
     color: rgb(70, 70, 71);
     transition: all 0.5s;
-    
-
 }
-
 
 .bar-item {
     flex: 1;
@@ -61,7 +57,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     border-radius: 2px;
     transition: all 0.5s;
 } 
@@ -86,8 +81,6 @@ nav {
     border: none;
 }
 
-
-
 .fixed-nav {
     top: 0;
 }
@@ -100,7 +93,6 @@ nav {
     background-size: cover;
     border-right: 0.1rem solid black;
 }
-
 
 #courses {
     position: relative;
