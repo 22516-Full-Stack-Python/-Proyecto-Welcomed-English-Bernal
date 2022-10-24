@@ -24,7 +24,7 @@
 
         <div class="form-container">
             <h1>Formulario de Registro</h1>
-            <p>Por favor, rellena este formulario con la información requerida.</p>
+            <p>Por favor, rellene el siguiente formulario con la información requerida.</p>
 
             <form action="http://httpbin.org/post" method="post" id="formulario">
                 <ul class="outer">
@@ -67,7 +67,7 @@
                         <label for="mensaje">Mensaje</label>
                         <textarea name="mensaje" id="mensaje" rows="6" placeholder="ingresa tu mensaje"></textarea>
                     </li>
-                    <li>
+                    <li class="conditions">
                         <label class="terminos" for="terminos">Acepto los términos y condiciones.</label>
                         <input class="terminoscb" type="checkbox" name="terminos"id="terminos">
                     </li>
@@ -76,7 +76,7 @@
 
                     </div>
                     
-                    <li>
+                    <li class="button-container">
                         <button name="submit" type="submit">Enviar</button>
                         <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado con éxito!</p>
                     </li>
@@ -99,7 +99,6 @@
     <footer></footer>
     <script src="formValidation.js"></script>
     <script src="navbar.js"></script>
-    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
