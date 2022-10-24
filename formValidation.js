@@ -1,20 +1,3 @@
-// const $form = document.querySelector("form")
-
-// $form.onsubmit = function validateForm (e) {
-//     validateName(e)
-// }
-
-
-// function validateName (e) {
-//     const name = document.querySelector("#nombre").value 
-//     const regex = /[A-z]/g
-//     if(!name.match(regex)) {
-//         e.preventDefault()
-//     } 
-// }
-
-// Comento porque recien vi despues de hacerlo 
-
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
