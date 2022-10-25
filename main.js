@@ -1,10 +1,3 @@
-const $startNow_Button = document.querySelector(".start-now_button")
-
-$startNow_Button.onclick = function () {
-    location.href = "form.html"
-}
-
-
 const api = "https://api.quotable.io/random?maxLength=50";
 
 const quote = document.getElementById("quote");
@@ -23,7 +16,7 @@ changeFrase()
 
 setInterval (function () {
     changeFrase()
-}, 30000)
+}, 10000)
 
 
 
