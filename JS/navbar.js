@@ -8,10 +8,10 @@ $navbar.innerHTML = `
         <div class="bar-item"><a href="nosotros.html">Nosotros</a></div>
         <div class="bar-item" id="courses">Cursos
             <div class="dropdown">
-                <a href="../HTML/cursos.html">Niños</a>
-                <a href="../HTML/cursos_adol.html">Adolescentes</a>
-                <a href="../HTML/cursos_adult.html">Adultos</a>
-                <a href="../HTML/exam.html">Examenes</a>
+                <a href="cursos.html">Niños</a>
+                <a href="cursos_adol.html">Adolescentes</a>
+                <a href="cursos_adult.html">Adultos</a>
+                <a href="exam.html">Examenes</a>
             </div>
         </div>
     <div class="bar-item"><a href="form.html">Contacto</a></div>
@@ -22,10 +22,10 @@ $navbar.innerHTML = `
 $footer.innerHTML = ` 
 <p>Copyright 2022 by. All rights reserved</p>
 <div class="site-map">
-    <a href="../index.html">Inicio</a>
-    <a href="../HTML/nosotros.html">Nosotros</a>
-    <a href="../HTML/cursos.html">Cursos</a>
-    <a href="../HTML/form.html">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="form.html">Contacto</a>
 </div>`
 
 const $nav = document.querySelector(".main")
@@ -67,7 +67,7 @@ window.addEventListener("resize", recalculateOffsetTop)
 const $startNow_Button = document.querySelector(".start-now_button")
 
 $startNow_Button.onclick = function () {
-    location.href = "../HTML/form.html"
+    location.href = "form.html"
 }
 
 
