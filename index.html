@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcomed English Bernal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="imagenes/lechuzaSVG.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,32 +52,8 @@
     <footer>
 
     </footer>
-    <script src="navbar.js"></script>
-    <script src="main.js"></script>
-
-
-    <!-- Consumo de API -->
-    <script>
-        const api = "https://api.quotable.io/random";
-
-        const quote = document.getElementById("quote");
-        const author = document.getElementById("author");
-        const btn = document.getElementById("btn");
-
-        btn.addEventListener("click", traerFrase);
-
-        function traerFrase() {
-            fetch(api)
-                .then((res) => res.json())
-                .then((data) => {
-                    quote.innerHTML = `"${data.content}"`;
-                    author.innerHTML = `- ${data.author}`;
-                });
-        }
-    </script>
-
-
-
+    <script src="JS/navbar.js" ></script>
+    <script src="JS/main.js" ></script>
 </body>
 
 
