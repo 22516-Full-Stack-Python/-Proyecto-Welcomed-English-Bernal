@@ -15,18 +15,25 @@ $navbar.innerHTML = `
             </div>
         </div>
     <div class="bar-item"><a href="form.html">Contacto</a></div>
-</div>`
-
-
+</div>
+`
 
 $footer.innerHTML = ` 
-<p>Copyright 2022 by. All rights reserved</p>
+<p>Copyright 2022. All rights reserved</p>
 <div class="site-map">
     <a href="index.html">Inicio</a>
     <a href="nosotros.html">Nosotros</a>
     <a href="cursos.html">Cursos</a>
     <a href="form.html">Contacto</a>
-</div>`
+</div>
+
+<div id="boton_whatsapp">
+        <a class="boton_whatsapp" href="https://wa.me/5491166098123/?text=Hola,%20Welcomed%20English%20Bernal!" target="_blank">
+            <img src="/imagenes/whatsapp.png">
+        </a>
+</div>
+
+`
 
 const $nav = document.querySelector(".main")
 const $dropdown = document.querySelector(".dropdown")
@@ -70,4 +77,14 @@ $startNow_Button.onclick = function () {
     location.href = "form.html"
 }
 
+//Boton Whastapp
+
+
+document.getElementsByTagName("footer").innerHTML=footer
+let boton_whatsapp =`
+        <a class="boton_whatsapp" href="https://wa.me/5491166098123/?text=Hola,%20Welcomed%20English%20Bernal!" target="_blank">
+            <img src="/imagenes/whatsapp.png" class="boton_whatsapp">
+        </a>
+`
+document.getElementById("boton_whatsapp").innerHTML=boton_whatsapp
 
