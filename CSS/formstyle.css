@@ -1,12 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
+html {
+  box-sizing: border-box;
+  background-color: rgba(245, 245, 245, 1);
+  font-family: "Roboto", sans-serif;
+  color: #595959;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: rgb(245, 245, 245);
-  color: rgb(27, 27, 50);
+  margin: 0;
+  padding: 0;
 }
 
 h1,
